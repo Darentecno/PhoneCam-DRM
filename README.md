@@ -1,7 +1,6 @@
 # PhoneCam
 
-PhoneCam convierte un teléfono Android en una cámara RTSP y publica ese video
-como cámara virtual de Windows para OBS Studio.
+PhoneCam convierte tu dispositivo móvil (Android / iOS) en una cámara web inalámbrica para OBS Studio, transmitiendo video en tiempo real mediante el protocolo RTSP a través de tu red local.
 
 ## Requisitos
 
@@ -30,7 +29,7 @@ FFmpeg porque debe estar instalado como programa del sistema.
 Si el router bloquea mDNS, inicia el backend con la IP mostrada por el teléfono:
 
 ```bat
-set PHONECAM_IP=192.168.1.25
+set PHONECAM_IP=192.123.456
 phonecam.bat
 ```
 
