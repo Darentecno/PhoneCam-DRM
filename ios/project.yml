@@ -1,0 +1,17 @@
+name: PhoneCam
+options:
+  bundleIdPrefix: com.phonecam
+  deploymentTarget:
+    iOS: "15.0"
+targets:
+  PhoneCam:
+    type: application
+    platform: iOS
+    sources:
+      - PhoneCam
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.phonecam.ios
+        INFOPLIST_FILE: PhoneCam/Info.plist
+        SWIFT_VERSION: "5.0"
+        TARGETED_DEVICE_FAMILY: "1"

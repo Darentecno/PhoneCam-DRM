@@ -1,0 +1,139 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.phonecam"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+7-->INJECTED
+8        android:minSdkVersion="21"
+8-->INJECTED
+9        android:targetSdkVersion="33" />
+9-->INJECTED
+10
+11    <!-- Permisos necesarios -->
+12    <uses-permission android:name="android.permission.CAMERA" />
+12-->C:\Users\yeyju\Downloads\phonecam_completo\mobile\android\app\src\main\AndroidManifest.xml:6:5-65
+12-->C:\Users\yeyju\Downloads\phonecam_completo\mobile\android\app\src\main\AndroidManifest.xml:6:22-62
+13    <uses-permission android:name="android.permission.INTERNET" />
+13-->C:\Users\yeyju\Downloads\phonecam_completo\mobile\android\app\src\main\AndroidManifest.xml:7:5-67
+13-->C:\Users\yeyju\Downloads\phonecam_completo\mobile\android\app\src\main\AndroidManifest.xml:7:22-64
+14    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+14-->C:\Users\yeyju\Downloads\phonecam_completo\mobile\android\app\src\main\AndroidManifest.xml:8:5-79
+14-->C:\Users\yeyju\Downloads\phonecam_completo\mobile\android\app\src\main\AndroidManifest.xml:8:22-76
+15    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+15-->C:\Users\yeyju\Downloads\phonecam_completo\mobile\android\app\src\main\AndroidManifest.xml:9:5-76
+15-->C:\Users\yeyju\Downloads\phonecam_completo\mobile\android\app\src\main\AndroidManifest.xml:9:22-73
+16
+17    <!-- Necesarios para que el servicio de streaming siga vivo en segundo plano -->
+18    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+18-->C:\Users\yeyju\Downloads\phonecam_completo\mobile\android\app\src\main\AndroidManifest.xml:12:5-77
+18-->C:\Users\yeyju\Downloads\phonecam_completo\mobile\android\app\src\main\AndroidManifest.xml:12:22-74
+19    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_CAMERA" />
+19-->C:\Users\yeyju\Downloads\phonecam_completo\mobile\android\app\src\main\AndroidManifest.xml:13:5-84
+19-->C:\Users\yeyju\Downloads\phonecam_completo\mobile\android\app\src\main\AndroidManifest.xml:13:22-81
+20    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+20-->C:\Users\yeyju\Downloads\phonecam_completo\mobile\android\app\src\main\AndroidManifest.xml:14:5-77
+20-->C:\Users\yeyju\Downloads\phonecam_completo\mobile\android\app\src\main\AndroidManifest.xml:14:22-74
+21
+22    <uses-feature
+22-->C:\Users\yeyju\Downloads\phonecam_completo\mobile\android\app\src\main\AndroidManifest.xml:16:5-18:35
+23        android:name="android.hardware.camera"
+23-->C:\Users\yeyju\Downloads\phonecam_completo\mobile\android\app\src\main\AndroidManifest.xml:17:9-47
+24        android:required="true" />
+24-->C:\Users\yeyju\Downloads\phonecam_completo\mobile\android\app\src\main\AndroidManifest.xml:18:9-32
+25    <uses-feature
+25-->C:\Users\yeyju\Downloads\phonecam_completo\mobile\android\app\src\main\AndroidManifest.xml:19:5-21:36
+26        android:name="android.hardware.camera.autofocus"
+26-->C:\Users\yeyju\Downloads\phonecam_completo\mobile\android\app\src\main\AndroidManifest.xml:20:9-57
+27        android:required="false" />
+27-->C:\Users\yeyju\Downloads\phonecam_completo\mobile\android\app\src\main\AndroidManifest.xml:21:9-33
+28
+29    <permission
+29-->[androidx.core:core:1.9.0] C:\Users\yeyju\.gradle\caches\9.5.0\transforms\98b12d707ff3b845a4f549e5ccd84249\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+30        android:name="com.phonecam.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+30-->[androidx.core:core:1.9.0] C:\Users\yeyju\.gradle\caches\9.5.0\transforms\98b12d707ff3b845a4f549e5ccd84249\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+31        android:protectionLevel="signature" />
+31-->[androidx.core:core:1.9.0] C:\Users\yeyju\.gradle\caches\9.5.0\transforms\98b12d707ff3b845a4f549e5ccd84249\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+32
+33    <uses-permission android:name="com.phonecam.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+33-->[androidx.core:core:1.9.0] C:\Users\yeyju\.gradle\caches\9.5.0\transforms\98b12d707ff3b845a4f549e5ccd84249\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+33-->[androidx.core:core:1.9.0] C:\Users\yeyju\.gradle\caches\9.5.0\transforms\98b12d707ff3b845a4f549e5ccd84249\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+34
+35    <application
+35-->C:\Users\yeyju\Downloads\phonecam_completo\mobile\android\app\src\main\AndroidManifest.xml:23:5-49:19
+36        android:allowBackup="true"
+36-->C:\Users\yeyju\Downloads\phonecam_completo\mobile\android\app\src\main\AndroidManifest.xml:24:9-35
+37        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+37-->[androidx.core:core:1.9.0] C:\Users\yeyju\.gradle\caches\9.5.0\transforms\98b12d707ff3b845a4f549e5ccd84249\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+38        android:debuggable="true"
+39        android:extractNativeLibs="true"
+39-->INJECTED
+40        android:icon="@mipmap/ic_launcher"
+40-->C:\Users\yeyju\Downloads\phonecam_completo\mobile\android\app\src\main\AndroidManifest.xml:25:9-43
+41        android:label="PhoneCam"
+41-->C:\Users\yeyju\Downloads\phonecam_completo\mobile\android\app\src\main\AndroidManifest.xml:26:9-33
+42        android:roundIcon="@mipmap/ic_launcher_round"
+42-->C:\Users\yeyju\Downloads\phonecam_completo\mobile\android\app\src\main\AndroidManifest.xml:27:9-54
+43        android:supportsRtl="true"
+43-->C:\Users\yeyju\Downloads\phonecam_completo\mobile\android\app\src\main\AndroidManifest.xml:28:9-35
+44        android:testOnly="true"
+45        android:theme="@style/Theme.AppCompat.Light"
+45-->C:\Users\yeyju\Downloads\phonecam_completo\mobile\android\app\src\main\AndroidManifest.xml:29:9-53
+46        android:usesCleartextTraffic="true" >
+46-->C:\Users\yeyju\Downloads\phonecam_completo\mobile\android\app\src\main\AndroidManifest.xml:30:9-44
+47        <activity
+47-->C:\Users\yeyju\Downloads\phonecam_completo\mobile\android\app\src\main\AndroidManifest.xml:33:9-41:20
+48            android:name="com.phonecam.MainActivity"
+48-->C:\Users\yeyju\Downloads\phonecam_completo\mobile\android\app\src\main\AndroidManifest.xml:34:13-41
+49            android:exported="true"
+49-->C:\Users\yeyju\Downloads\phonecam_completo\mobile\android\app\src\main\AndroidManifest.xml:35:13-36
+50            android:screenOrientation="portrait" >
+50-->C:\Users\yeyju\Downloads\phonecam_completo\mobile\android\app\src\main\AndroidManifest.xml:36:13-49
+51            <intent-filter>
+51-->C:\Users\yeyju\Downloads\phonecam_completo\mobile\android\app\src\main\AndroidManifest.xml:37:13-40:29
+52                <action android:name="android.intent.action.MAIN" />
+52-->C:\Users\yeyju\Downloads\phonecam_completo\mobile\android\app\src\main\AndroidManifest.xml:38:17-69
+52-->C:\Users\yeyju\Downloads\phonecam_completo\mobile\android\app\src\main\AndroidManifest.xml:38:25-66
+53
+54                <category android:name="android.intent.category.LAUNCHER" />
+54-->C:\Users\yeyju\Downloads\phonecam_completo\mobile\android\app\src\main\AndroidManifest.xml:39:17-77
+54-->C:\Users\yeyju\Downloads\phonecam_completo\mobile\android\app\src\main\AndroidManifest.xml:39:27-74
+55            </intent-filter>
+56        </activity>
+57
+58        <service
+58-->C:\Users\yeyju\Downloads\phonecam_completo\mobile\android\app\src\main\AndroidManifest.xml:43:9-47:54
+59            android:name="com.phonecam.RTSPService"
+59-->C:\Users\yeyju\Downloads\phonecam_completo\mobile\android\app\src\main\AndroidManifest.xml:44:13-40
+60            android:enabled="true"
+60-->C:\Users\yeyju\Downloads\phonecam_completo\mobile\android\app\src\main\AndroidManifest.xml:45:13-35
+61            android:exported="false"
+61-->C:\Users\yeyju\Downloads\phonecam_completo\mobile\android\app\src\main\AndroidManifest.xml:46:13-37
+62            android:foregroundServiceType="camera" />
+62-->C:\Users\yeyju\Downloads\phonecam_completo\mobile\android\app\src\main\AndroidManifest.xml:47:13-51
+63
+64        <provider
+64-->[androidx.emoji2:emoji2:1.2.0] C:\Users\yeyju\.gradle\caches\9.5.0\transforms\1fbef3ce5f4911016ff260ae9861fa57\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+65            android:name="androidx.startup.InitializationProvider"
+65-->[androidx.emoji2:emoji2:1.2.0] C:\Users\yeyju\.gradle\caches\9.5.0\transforms\1fbef3ce5f4911016ff260ae9861fa57\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
+66            android:authorities="com.phonecam.androidx-startup"
+66-->[androidx.emoji2:emoji2:1.2.0] C:\Users\yeyju\.gradle\caches\9.5.0\transforms\1fbef3ce5f4911016ff260ae9861fa57\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
+67            android:exported="false" >
+67-->[androidx.emoji2:emoji2:1.2.0] C:\Users\yeyju\.gradle\caches\9.5.0\transforms\1fbef3ce5f4911016ff260ae9861fa57\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
+68            <meta-data
+68-->[androidx.emoji2:emoji2:1.2.0] C:\Users\yeyju\.gradle\caches\9.5.0\transforms\1fbef3ce5f4911016ff260ae9861fa57\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+69                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+69-->[androidx.emoji2:emoji2:1.2.0] C:\Users\yeyju\.gradle\caches\9.5.0\transforms\1fbef3ce5f4911016ff260ae9861fa57\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+70                android:value="androidx.startup" />
+70-->[androidx.emoji2:emoji2:1.2.0] C:\Users\yeyju\.gradle\caches\9.5.0\transforms\1fbef3ce5f4911016ff260ae9861fa57\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+71            <meta-data
+71-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\yeyju\.gradle\caches\9.5.0\transforms\2ffc56abd7d3bd0597da0f5d9f7fd11e\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+72                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+72-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\yeyju\.gradle\caches\9.5.0\transforms\2ffc56abd7d3bd0597da0f5d9f7fd11e\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+73                android:value="androidx.startup" />
+73-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\yeyju\.gradle\caches\9.5.0\transforms\2ffc56abd7d3bd0597da0f5d9f7fd11e\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+74        </provider>
+75    </application>
+76
+77</manifest>

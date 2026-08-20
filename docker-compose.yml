@@ -1,0 +1,9 @@
+﻿version: '3.8'
+services:
+  phonecam:
+    build: .
+    container_name: phonecam
+    network_mode: host
+    restart: unless-stopped
+    stdin_open: true
+    tty: true

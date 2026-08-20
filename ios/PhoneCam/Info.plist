@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleDisplayName</key><string>PhoneCam</string>
+    <key>CFBundleIdentifier</key><string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+    <key>CFBundleName</key><string>PhoneCam</string>
+    <key>CFBundlePackageType</key><string>APPL</string>
+    <key>CFBundleShortVersionString</key><string>1.0</string>
+    <key>CFBundleVersion</key><string>1</string>
+    <key>LSRequiresIPhoneOS</key><true/>
+    <key>NSCameraUsageDescription</key><string>PhoneCam necesita la cámara para transmitir video.</string>
+    <key>NSLocalNetworkUsageDescription</key><string>PhoneCam transmite video a tu PC en la red local.</string>
+    <key>UIRequiredDeviceCapabilities</key><array><string>camera</string></array>
+    <key>UILaunchScreen</key><dict/>
+</dict>
+</plist>

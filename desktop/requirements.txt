@@ -1,0 +1,3 @@
+﻿numpy>=1.24.0
+zeroconf>=0.71.0
+pyvirtualcam>=0.11.1

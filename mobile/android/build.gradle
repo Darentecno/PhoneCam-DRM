@@ -1,0 +1,15 @@
+buildscript {
+    ext {
+        agp_version = '9.3.1'
+    }
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:$agp_version"
+    }
+}
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
