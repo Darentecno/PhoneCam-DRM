@@ -9,9 +9,10 @@ class MDNSDiscovery:
     def __init__(self, service_type: str = "_phonecam._tcp.local."):
         self.service_type = service_type
         self.zeroconf = Zeroconf()
+        # Se inicializa el Lock antes de usarlo en el bloque 'with'
+        self._lock = threading.Lock()
         with self._lock:
             self.devices = []
-        self._lock = threading.Lock()
         self._discovery_complete = threading.Event()
         
     def discover(self, timeout: int = 5):
@@ -19,14 +20,18 @@ class MDNSDiscovery:
         self._discovery_complete.clear()
         
         class DeviceListener:
-            def __init__(self, parent): self.parent = parent
+            def __init__(self, parent): 
+                self.parent = parent
             def add_service(self, zc, type_, name):
                 info = zc.get_service_info(type_, name)
-                if info: self.parent._add_device(info, name)
-            def remove_service(self, zc, type_, name): pass
+                if info: 
+                    self.parent._add_device(info, name)
+            def remove_service(self, zc, type_, name): 
+                pass
             def update_service(self, zc, type_, name):
                 info = zc.get_service_info(type_, name)
-                if info: self.parent._add_device(info, name)
+                if info: 
+                    self.parent._add_device(info, name)
         
         ServiceBrowser(self.zeroconf, self.service_type, DeviceListener(self))
         self._discovery_complete.wait(timeout)

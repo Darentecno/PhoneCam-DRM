@@ -31,7 +31,7 @@ public class CameraService {
     // WiFi local. Se puede subir a 1920x1080 si la red y el telÃ©fono lo soportan.
     private static final int WIDTH = 1280;
     private static final int HEIGHT = 720;
-    private static final int BITRATE = 4_000_000;
+    private static final int BITRATE = 2_000_000;
 
     private final Context context;
     private final CameraManager cameraManager;

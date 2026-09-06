@@ -1,4 +1,4 @@
-#Thu Aug 20 15:50:06 COT 2026
+#Sun Sep 06 14:32:51 COT 2026
 base.0=C\:\\Users\\yeyju\\Downloads\\phonecam_completo\\mobile\\android\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 base.1=C\:\\Users\\yeyju\\Downloads\\phonecam_completo\\mobile\\android\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
 base.2=C\:\\Users\\yeyju\\Downloads\\phonecam_completo\\mobile\\android\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\9\\classes.dex

@@ -8,7 +8,7 @@ import shutil
 logger = logging.getLogger(__name__)
 
 class RTSPClient:
-    def __init__(self, rtsp_url: str, width: int = 1920, height: int = 1080, fps: int = 30):
+    def __init__(self, rtsp_url: str, width: int = 1280, height: int = 720, fps: int = 30):
         self.rtsp_url = rtsp_url
         self.width = width
         self.height = height
