@@ -7,10 +7,10 @@ PhoneCam convierte tu dispositivo móvil (Android / iOS) en una cámara web inal
 Para asegurar el funcionamiento correcto del proyecto, asegúrate de tener instaladas las siguientes herramientas en tu entorno de desarrollo:
 
 - **Sistema Operativo:** Windows 10 o 11.
-- **Python (Versión 3.9 o superior):** [Descargar Python](https://www.python.org/downloads/)[cite: 7].
-- **FFmpeg:** Es indispensable que esté instalado a nivel de sistema y configurado en las variables de entorno (`PATH`)[cite: 7]. [Descargar FFmpeg](https://ffmpeg.org/download.html).
-- **OBS Studio:** [Descargar OBS Studio](https://obsproject.com/)[cite: 7].
-- **Android Studio:** Necesario para compilar y desplegar la aplicación móvil en dispositivos Android[cite: 7]. [Descargar Android Studio](https://developer.android.com/studio).
+- **Python (Versión 3.9 o superior):** [Descargar Python](https://www.python.org/downloads/).
+- **FFmpeg:** Es indispensable que esté instalado a nivel de sistema y configurado en las variables de entorno (`PATH`). [Descargar FFmpeg](https://ffmpeg.org/download.html).
+- **OBS Studio:** [Descargar OBS Studio](https://obsproject.com/).
+- **Android Studio:** Necesario para compilar y desplegar la aplicación móvil en dispositivos Android. [Descargar Android Studio](https://developer.android.com/studio).
 - **Xcode y macOS:** Requisito opcional únicamente si requieres compilar la aplicación para iPhone.
 
 El script `phonecam.bat` incluido en el repositorio se encarga de instalar automáticamente las dependencias necesarias de Python (como `opencv-python` y `pyvirtualcam`).
@@ -22,9 +22,9 @@ El script `phonecam.bat` incluido en el repositorio se encarga de instalar autom
 1. **Conexión de Red:** Conecta tanto tu teléfono móvil como tu PC a la misma red Wi-Fi (se recomienda encarecidamente utilizar la banda de **5 GHz** para minimizar la latencia).
 2. **Configuración en Android:** Abre la carpeta `mobile/android` en Android Studio, compila e instala la aplicación en tu dispositivo, y otorga los permisos necesarios para el uso de la cámara.
 3. **Inicio del Servidor RTSP:** Abre la aplicación PhoneCam en el celular y presiona **Iniciar**. La interfaz mostrará la dirección IP local asignada y el servidor comenzará a escuchar conexiones en el puerto `8554`.
-4. **Ejecución del Backend:** Ejecuta el archivo `phonecam.bat` en tu PC. El script buscará automáticamente el dispositivo en la red mediante mDNS, abrirá el flujo de video `/live` y registrará la cámara virtual del sistema bajo el nombre **PhoneCam**[cite: 7].
+4. **Ejecución del Backend:** Ejecuta el archivo `phonecam.bat` en tu PC. El script buscará automáticamente el dispositivo en la red mediante mDNS, abrirá el flujo de video `/live` y registrará la cámara virtual del sistema bajo el nombre **PhoneCam**.
 5. **Visualización en OBS Studio:**
-   - **Método con Cámara Virtual:** Añade una fuente de tipo **Dispositivo de captura de video** en OBS y selecciona **PhoneCam**[cite: 7].
+   - **Método con Cámara Virtual:** Añade una fuente de tipo **Dispositivo de captura de video** en OBS y selecciona **PhoneCam**.
    - **Método Directo (Recomendado para baja latencia):** Añade una **Fuente multimedia** en OBS, desmarca la opción "Archivo local", escribe en el campo de entrada `rtsp://<IP_DE_TU_TELEFONO>:8554/live` y añade el parámetro `rtsp_transport=tcp` en las opciones de entrada (`Input Flags`) para estabilizar el flujo de red.
 
  ## Soporte para Dispositivos iOS (iPhone)
@@ -53,7 +53,7 @@ Para instalar la aplicación en tu iPhone, es **obligatorio** el uso de Xcode, u
    * **Método Cámara Virtual:** Ejecuta `phonecam.bat` para que el script detecte el iPhone y encienda la cámara virtual del sistema.
 
 ### Solución alternativa si el router bloquea mDNS
-Si la red local impide el descubrimiento automático por mDNS, puedes forzar la conexión iniciando el backend especificando de forma manual la dirección IP que muestra tu teléfono[cite: 7]:
+Si la red local impide el descubrimiento automático por mDNS, puedes forzar la conexión iniciando el backend especificando de forma manual la dirección IP que muestra tu teléfono:
 
 ```bat
 set PHONECAM_IP=192.168.x.xx
